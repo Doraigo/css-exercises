@@ -7,21 +7,44 @@ body {
   width: 400px;
   background: #fff;
   margin: 16px auto;
+  padding: 8px;
 }
 
 .title {
   background: #e3f4ff;
+  padding: 8px;
+  font-size: 16px;
+  margin-top: 0px;
+  margin-bottom: 8px;
 }
 
 .content {
   background: #e3f4ff;
+  /* Apply to all four sides */
+  /* top and bottom | left and right */
+  /* top | left and right | bottom */
+  /* top | right | bottom | left */
+  padding: 16px 8px;
+  margin-bottom: 8px;
 }
 
 .button-container {
   background: #e3f4ff;
+  padding: 8px;
+  text-align: center;
+  /* Here i put margin-top only to check that it does nothing since
+  there is already a margin bottom in .content */
+  margin-top: 8px;
 }
 
 button {
   background: white;
   border: 1px solid #eee;
+  padding: 8px 24px;
+  /*  block is used to continue down in the page so the button can 
+  move below*/
+  display: block;
+  /* Here i copied from the solution it is giving two values
+  one for top bottom | left right*/
+  margin: 0 auto;
 }
