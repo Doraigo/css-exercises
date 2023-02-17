@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
-html, body {
+html,
+body {
   height: 100%;
 }
 
@@ -19,8 +20,13 @@ body {
   background: white;
   width: 480px;
   border-radius: 10px;
-  box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+  box-shadow: 2px 4px 16px rgba(0, 0, 0, .2);
+  display: flex;
+  padding: 16px;
+  gap: 16px;
+  /* this gap only affects between icon and container*/
 }
+
 
 .icon {
   color: royalblue;
@@ -33,6 +39,29 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
+  /* margin-right: 16px; this was achieved by gap on modal 
+  shrink was good from my part*/
+}
+
+/* .container {
+  display: flex;
+} this was making everything wrong*/
+
+/* .top {
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+  margin-bottom: 8px;
+} this can be made on header*/
+
+.header {
+  font-weight: 700;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
 }
 
 .close-button {
@@ -47,6 +76,12 @@ body {
   align-items: center;
   justify-content: center;
 }
+
+.text {
+  margin-bottom: 16px;
+}
+
+
 
 button {
   padding: 8px 16px;
