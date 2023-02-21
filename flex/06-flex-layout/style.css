@@ -17,13 +17,15 @@ body {
   padding: 16px;
 }
 
-.left-links,
+/* .left-links,
 .right-links {
   display: flex;
   gap: 16px;
-}
+} this wasn't necessary here*/
 
 ul {
+  display: flex;
+  gap: 16px;
   list-style: none;
   margin: 0px;
   padding: 0px;
